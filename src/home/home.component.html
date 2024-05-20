@@ -1,35 +1,61 @@
 <div class="home">
-<p>
-Founded by a South African entrepreneur, Asipokuhle Holdings is an investment holding company with a focus on long-term investment opportunities.
-We specialize in forging partnerships with financial entities renowned for successful investments across various industries.</p>
+  <div class="wrapper">
+    <div class="about">
+      <img src="assets\about01.jpg" alt="Description" class="image" />
+      <div class="aboutText">
+        <h2>Who we are</h2>
+        <p>
+          Asipokuhle Holdings is an investment holding company founded by a
+          South African entrepreneur, with a focus on long-term investment
+          opportunities. We specialize in forging partnerships with financial
+          entities renowned for successful investments across various
+          industries.
+        </p>
+        <p>
+          Asipokuhle Holdings provides equity and empowerment financing for
+          brownfield and late-stage greenfield projects in South Africa,
+          primarily focusing on renewable energy and economic infrastructure
+          projects such as energy, water, transport, and ICT within South Africa
+          and select parts of the Southern African Development Community (SADC).
+        </p>
+      </div>
+    </div>
 
-<p>
-    Asipokuhle Holdings provides equity and empowerment financing for brownfield and late-stage greenfield projects in South Africa,
-    primarily focusing on renewable energy and economic infrastructure projects such as energy, water, transport, and ICT within South Africa
-    and select parts of the Southern African Development Community (SADC).
-</p>
+    <div class="vision">
+      <img src="assets\about01.jpg" alt="Description" class="image" />
+      <div class="aboutText">
+        <h2>Vision</h2>
+        <p>
+          We’re always on the look-out for world classproducts and suppliers to
+          complement our range, which in turn, gives our customers access to
+          these products.
+        </p>
+      </div>
+    </div>
 
-<div>
-    <h2>Vision</h2>
-    <p>
-        We’re always on the look-out for world classproducts and suppliers to complement our range,
-        which in turn, gives our customers access to these products.
-    </p>
-</div>
-<div>
-    <h2>Mission</h2>
-    <p>
-        To build long-term relationships and be the preferred trading partner of choice to our clients.
-    </p>
-</div>
-<div>
-    <h2>Values</h2>
-    <p> The core values of Asipokuhle Holdings are:</p>
-    <ul *ngFor="let value of values">
-        <li>{{value}}</li>
-    </ul>
-    
-</div>
+    <div class="mission">
+      <img src="assets\about01.jpg" alt="Description" class="image" />
+      <div class="aboutText">
+        <h2>Mission</h2>
+        <p>
+          To build long-term relationships and be the preferred trading partner
+          of choice to our clients. To build long-term relationships and be the preferred trading partner
+          of choice to our clients.
+        </p>
+      </div>
+    </div>
 
-
+    <div class="values">
+      <img src="assets\about01.jpg" alt="Description" class="image" />
+      <div class="aboutText">
+        <h2>Values</h2>
+        <p>The core values of Asipokuhle Holdings are</p>
+        <div class="block-list">
+          <ul *ngFor="let value of values">
+            <li class="block-item">{{ value }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

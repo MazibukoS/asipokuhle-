@@ -1,12 +1,90 @@
-.home{
-    padding: 10% 10% 10% 10%;
-    align-items: center;
+.home {
+  padding: 10% 10% 10% 10%;
+  align-items: center;
+  background-color: #f8f9fa;
 }
 
 ul {
-  list-style-type: square;
+  list-style-type: none;
 }
 
-h2{
-    text-align: center;
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.block-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between blocks */
+}
+
+.block-item {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff; /* White background for the container */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  max-width: 150px; /* Adjust the max-width as needed */
+  height: auto;
+  margin-right: 20px; /* Space between image and text */
+  border-radius: 8px; /* Optional: rounded corners for the image */
+}
+
+.aboutText {
+}
+
+.vision {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff; /* White background for the container */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff; /* White background for the container */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.values {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff; /* White background for the container */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between the two containers */
 }

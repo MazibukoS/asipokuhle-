@@ -10,7 +10,7 @@
 button:hover {
         
         transition: 0.3s;
-        color: rgb(0, 38, 255)
+        color: gold
       }
 
 button {border-style: none;}
