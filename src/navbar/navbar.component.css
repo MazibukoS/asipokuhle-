@@ -7,13 +7,17 @@
   color: white;
 }
 
+span{
+  font-family:'Times New Roman', Times, serif
+}
+
 button:hover {
         
         transition: 0.3s;
         color: gold
       }
 
-button {border-style: none;}
+button {border-style: none;font-family:'Times New Roman', Times, serif}
 
 mat-toolbar {
   position: fixed;

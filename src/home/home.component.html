@@ -1,6 +1,80 @@
 <div class="home">
   <div class="wrapper">
-    <div class="about">
+    <div class="logo">
+      <img src="assets\logoLand.png" alt="Description" class="" />
+    </div>
+    <div>
+      <hr class="thick-line" />
+    </div>
+    <h2
+      class="heading about1"
+      (click)="toggleVisibility('about1', 'aboutText')"
+    >
+      Who we are
+    </h2>
+    <div
+      class="text aboutText"
+      (click)="toggleVisibility('aboutText', 'about1')"
+    >
+      <p>
+        Asipokuhle Holdings is an investment holding company with a focus on
+        long-term investment opportunities. We specialize in forging
+        partnerships with financial entities renowned for successful investments
+        across various industries.
+      </p>
+    </div>
+    <div class="logo">
+      <img src="assets\clearAfrica.png" alt="Description" class="africa" />
+    </div>
+    <h2
+      class="heading vision"
+      (click)="toggleVisibility('vision', 'visionText')"
+    >
+      Vision
+    </h2>
+    <div
+      class="text visionText"
+      (click)="toggleVisibility('visionText', 'vision')"
+    >
+      <p>
+        We’re always on the look-out for world classproducts and suppliers to
+        complement our range, which in turn, gives our customers access to these
+        products.
+      </p>
+    </div>
+    <h2
+      class="heading mission"
+      (click)="toggleVisibility('mission', 'missionText')"
+    >
+      Mission
+    </h2>
+    <div
+      class="text missionText"
+      (click)="toggleVisibility('missionText', 'mission')"
+    >
+      <p>
+        To build long-term relationships and be the preferred trading partner of
+        choice to our clients. To build long-term relationships and be the
+        preferred trading partner of choice to our clients.
+      </p>
+    </div>
+    <h2
+      class="heading values"
+      (click)="toggleVisibility('values', 'valuesText')"
+    >
+      Values
+    </h2>
+    <div
+      class="text valuesText"
+      (click)="toggleVisibility('valuesText', 'values')"
+    >
+      <div class="block-list">
+        <ul *ngFor="let value of values">
+          <li class="block-item">{{ value }}</li>
+        </ul>
+      </div>
+    </div>
+    <!--  <div class="about">
       <img src="assets\about01.jpg" alt="Description" class="image" />
       <div class="aboutText">
         <h2>Who we are</h2>
@@ -20,7 +94,6 @@
         </p>
       </div>
     </div>
-
     <div class="vision">
       <img src="assets\about01.jpg" alt="Description" class="image" />
       <div class="aboutText">
@@ -39,8 +112,8 @@
         <h2>Mission</h2>
         <p>
           To build long-term relationships and be the preferred trading partner
-          of choice to our clients. To build long-term relationships and be the preferred trading partner
-          of choice to our clients.
+          of choice to our clients. To build long-term relationships and be the
+          preferred trading partner of choice to our clients.
         </p>
       </div>
     </div>
@@ -56,6 +129,6 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>

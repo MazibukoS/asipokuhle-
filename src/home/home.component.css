@@ -1,7 +1,13 @@
 .home {
-  padding: 10% 10% 10% 10%;
+  padding: 0% 0% 5% 0%;
+  margin: 0;
   align-items: center;
-  background-color: #f8f9fa;
+}
+
+.thick-line {
+  border: 0;
+  height: 10px;
+  background-color: #e0aa3e;
 }
 
 ul {
@@ -37,9 +43,52 @@ p {
   align-items: center;
   background-color: #ffffff; /* White background for the container */
   border: 1px solid #ddd;
-  border-radius: 8px;
   padding: 20px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+.heading,
+.text {
+  position: absolute;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.heading:hover, .text:hover {
+  color: #e0aa3e;
+}
+
+ .about1, .aboutText {
+  margin-left: 1000px;
+  margin-top: 450px;
+   transform: translateX(-50%);
+}
+
+.vision, .visionText {
+  margin-left: 300px;
+  margin-top: 850px;
+   transform: translateX(-50%);
+   max-width:350px;
+}
+
+.mission, .missionText {
+  margin-left: 1100px;
+  margin-top: 750px;
+   transform: translateX(-50%);
+}
+
+.values, .valuesText {
+  margin-left: 300px;
+  margin-top: 1000px;
+   transform: translateX(-50%);
+   max-width:650px;
+}
+
+.text {
+  display: none;
 }
 
 .image {
@@ -49,42 +98,12 @@ p {
   border-radius: 8px; /* Optional: rounded corners for the image */
 }
 
-.aboutText {
-}
-
-.vision {
-  display: flex;
-  align-items: center;
-  background-color: #ffffff; /* White background for the container */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.mission {
-  display: flex;
-  align-items: center;
-  background-color: #ffffff; /* White background for the container */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.values {
-  display: flex;
-  align-items: center;
-  background-color: #ffffff; /* White background for the container */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+.africa {
+  max-width: 100%;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Space between the two containers */
+  display: flex;
+  flex-direction: column;
+  gap: 2px; /* Space between the two containers */
 }

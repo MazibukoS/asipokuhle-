@@ -9,3 +9,5 @@ mat-toolbar {
   display: flex;
   justify-content: space-around;
 }
+
+button {border-style: none;font-family:'Times New Roman', Times, serif}
