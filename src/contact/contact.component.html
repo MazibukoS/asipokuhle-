@@ -1,14 +1,66 @@
-<h3>Get in touch</h3>
+<div class="background-image">
 <h4>ASIPOKUHLE HOLDINGS (PTY) LTD</h4>
 <h4>Regus</h4>
 <h4>Midrand</h4>
 <h4>Birchwood Court, Montrose Street, Vorna Valley,</h4>
 <h4>Johannesburg, 1686</h4>
 <h4>(+27) 73 756 7780</h4>
-<h4><a href="info@asiphokuhle.co.za">Mail us</a></h4>
+<h4><a href="info@asiphokuhle.co.za">info&#64;asiphokuhle.co.za</a></h4>
 
-
-
-
-
-
+<div class="contactForm">
+  <h2>Send us a message</h2>
+  <form (ngSubmit)="submitForm()" #contactForm="ngForm">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        name="name"
+        ngModel
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="surname">Surname</label>
+      <input
+        type="text"
+        class="form-control"
+        id="surname"
+        name="surname"
+        ngModel
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        ngModel
+        required
+        email
+      />
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea
+        class="form-control"
+        id="message"
+        name="message"
+        ngModel
+        required
+      ></textarea>
+    </div>
+    <button
+      type="submit"
+      class="btn btn-primary"
+      [disabled]="!contactForm.valid"
+    >
+      Send
+    </button>
+  </form>
+</div>
+</div>

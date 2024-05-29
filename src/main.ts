@@ -6,8 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { routes } from './app/app.routes';
+import { FormsModule } from '@angular/forms';
 
 bootstrapApplication(AppComponent, {
   providers: [
@@ -17,7 +17,7 @@ bootstrapApplication(AppComponent, {
       MatToolbarModule,
       MatButtonModule,
       CommonModule,
-      SlickCarouselModule,
+      FormsModule
     ),
   ],
 }).catch((err) => console.error(err));
