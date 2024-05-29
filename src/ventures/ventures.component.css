@@ -1,0 +1,107 @@
+.ventures {
+  align-items: center;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -20px;
+}
+
+.infrastructure {
+  background-color: rgb(224, 214, 214);
+  height: 250px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.investment {
+  background-color: rgb(241, 239, 239);
+  height: 250px;
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mining {
+  background-color: rgb(224, 214, 214);
+  height: 250px;
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.energy {
+  background-color: rgb(241, 239, 239);
+  height: 250px;
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+  background-color: rgb(224, 214, 214);
+  height: 250px;
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.supply {
+  background-color: rgb(241, 239, 239);
+  height: 250px;
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.partners {
+  background-color: rgb(224, 214, 214);
+  height: 250px;
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.image img {
+  max-width: 200px;
+  border-radius: 8px;
+  max-height: 200px;
+}
+
+.text {
+  flex: 1 1 auto;
+}
+

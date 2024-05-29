@@ -12,6 +12,33 @@ p {
   font-family: "Times New Roman", Times, serif;
 }
 
-.galaxy{
-max-width: 60%;
+.background-image {
+    background-image:  url('../assets/aboutWall.jpg');
+    
+    background-size: cover; /* Adjust to fit your needs */
+    background-position: center center; /* Adjust to fit your needs */
+    height: 100vh; /* Adjust to fit your needs */
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    max-width: 70%;
+}
+
+.content h3 {
+    color: white;
+    font-size: 2rem; 
+}
+
+
+.button-container{
+  margin-top: -210px;
+}
+
+button{
+  font-family: "Times New Roman", Times, serif;
+  margin: 5px;
 }

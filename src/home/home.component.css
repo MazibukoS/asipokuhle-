@@ -2,6 +2,7 @@
   padding: 0% 0% 5% 0%;
   margin: 0;
   align-items: center;
+  background-color: rgb(235, 228, 228);
 }
 
 .thick-line {
@@ -49,7 +50,6 @@ p {
   font-family: "Times New Roman", Times, serif;
 }
 
-
 .heading,
 .text {
   position: absolute;
@@ -57,34 +57,42 @@ p {
   font-family: "Times New Roman", Times, serif;
 }
 
-.heading:hover, .text:hover {
+.heading:hover,
+.text:hover {
   color: #e0aa3e;
 }
 
- .about1, .aboutText {
+.about1,
+.aboutText {
   margin-left: 1000px;
-  margin-top: 450px;
-   transform: translateX(-50%);
+  margin-top: 170px;
+  transform: translateX(-50%);
+  max-width: 25vh;
+
 }
 
-.vision, .visionText {
-  margin-left: 300px;
-  margin-top: 850px;
-   transform: translateX(-50%);
-   max-width:350px;
+.vision,
+.visionText {
+  margin-left: 1000px;
+  margin-top: 400px;
+  transform: translateX(-50%);
+  max-width: 25vh;
 }
 
-.mission, .missionText {
-  margin-left: 1100px;
-  margin-top: 750px;
-   transform: translateX(-50%);
+.mission,
+.missionText {
+  margin-left: -500px;
+  margin-top: 150px;
+  transform: translateX(-50%);
+  max-width: 25vh;
 }
 
-.values, .valuesText {
-  margin-left: 300px;
-  margin-top: 1000px;
-   transform: translateX(-50%);
-   max-width:650px;
+.values,
+.valuesText {
+  margin-left: -200px;
+  margin-top: 500px;
+  transform: translateX(-50%);
+  max-width: 100vh;
 }
 
 .text {
@@ -99,11 +107,15 @@ p {
 }
 
 .africa {
-  max-width: 100%;
+  max-width: 80%;
+  margin-left: 15%;
+  position:relative;
+  top:50px;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   gap: 2px; /* Space between the two containers */
+  align-items: center;
 }

@@ -3,21 +3,23 @@
 }
 
 .custom-button {
-  background-color: #ff4081; 
+  background-color: #ff4081;
   color: white;
 }
 
-span{
-  font-family:'Times New Roman', Times, serif
+span {
+  font-family: "Times New Roman", Times, serif;
 }
 
 button:hover {
-        
-        transition: 0.3s;
-        color: gold
-      }
+  transition: 0.3s;
+  color: gold;
+}
 
-button {border-style: none;font-family:'Times New Roman', Times, serif}
+button {
+  border-style: none;
+  font-family: "Times New Roman", Times, serif;
+}
 
 mat-toolbar {
   position: fixed;
@@ -25,4 +27,14 @@ mat-toolbar {
   left: 0;
   width: 100%;
   z-index: 1000;
+}
+
+.background-image {
+  background-image: url("../assets/navbarLogo12.png");
+  background-size: cover; /* Adjust to fit your needs */
+  background-position: center center; /* Adjust to fit your needs */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }

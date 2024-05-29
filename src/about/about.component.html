@@ -9,19 +9,27 @@
     <h5>KAMOGELO TUGE</h5>
     <img>
 </div> -->
-<div class="logo">
-  <img src="assets\logoLand.png" alt="Description" class="" />
-</div>
-<div class="logo">
-      <img src="assets\groupFunctions.jpg" alt="Description" class="galaxy" />
+
+<div class="background-image">
+  <div class="content">
+    <div class="button-container">
+      <button
+        *ngFor="let block of blocks"
+        [class.selected]="selectedBlock === block.id"
+        (click)="onSelectBlock(block.id)"
+      >
+       {{ block.heading }}
+      </button>
     </div>
-<h3>Group Functions</h3>
-<p>
-  Our operational and trading capabilities spread across partnering in numerous
-  public and private sector initiated bids, and trade transactions. We focus on
-  establishing global partnerships with private sector to initiate programmes
-  that demonstrate social and economical merit for citizens.
-</p>
+
+    <div class="text-container">
+      <p *ngIf="selectedBlock !== null" class="block-text">
+        {{ blocks[selectedBlock - 1].text }}
+      </p>
+    </div>
+  </div>
+
+  <!--
 <div>
   <h4>ASIPOKUHLE COMMODITY</h4>
   <p>
@@ -51,4 +59,5 @@
     about innovative services, processes and technologies that enable our
     clients to achieve optimal fuel efficiency.
   </p>
+</div> -->
 </div>
