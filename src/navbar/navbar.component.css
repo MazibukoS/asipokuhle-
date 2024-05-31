@@ -13,7 +13,8 @@ span {
 
 button:hover {
   transition: 0.3s;
-  color: gold;
+  color: white;
+  background-color: black;
 }
 
 button {
@@ -27,14 +28,4 @@ mat-toolbar {
   left: 0;
   width: 100%;
   z-index: 1000;
-}
-
-.background-image {
-  background-image: url("../assets/navbarLogo12.png");
-  background-size: cover; /* Adjust to fit your needs */
-  background-position: center center; /* Adjust to fit your needs */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
 }

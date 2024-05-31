@@ -14,7 +14,6 @@ p {
 
 .background-image {
     background-image:  url('../assets/aboutWall.jpg');
-    
     background-size: cover; /* Adjust to fit your needs */
     background-position: center center; /* Adjust to fit your needs */
     height: 100vh; /* Adjust to fit your needs */

@@ -1,14 +1,7 @@
 .home {
-  padding: 0% 0% 5% 0%;
   margin: 0;
   align-items: center;
-  background-color: rgb(235, 228, 228);
-}
-
-.thick-line {
-  border: 0;
-  height: 10px;
-  background-color: #e0aa3e;
+  height: 100%;
 }
 
 ul {
@@ -21,22 +14,6 @@ h2 {
 
 p {
   text-align: center;
-}
-
-.block-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px; /* Space between blocks */
-}
-
-.block-item {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
-  width: 100px;
-  text-align: center;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .about {
@@ -57,9 +34,8 @@ p {
   font-family: "Times New Roman", Times, serif;
 }
 
-.heading:hover,
-.text:hover {
-  color: #e0aa3e;
+.heading:hover {
+  font-size: 24px;
 }
 
 .about1,
@@ -67,8 +43,8 @@ p {
   margin-left: 1000px;
   margin-top: 170px;
   transform: translateX(-50%);
-  max-width: 25vh;
-
+  font-size: 20px;
+  transition: font-size 0.3s ease;
 }
 
 .vision,
@@ -77,14 +53,19 @@ p {
   margin-top: 400px;
   transform: translateX(-50%);
   max-width: 25vh;
+  font-size: 20px;
+  transition: font-size 0.3s ease;
 }
 
 .mission,
 .missionText {
-  margin-left: -500px;
-  margin-top: 150px;
+  margin-left: 1100px;
+  margin-top: 50px;
   transform: translateX(-50%);
-  max-width: 25vh;
+  font-size: 20px;
+  transition: font-size 0.3s ease;
+  color: #ffffff;
+  
 }
 
 .values,
@@ -93,29 +74,80 @@ p {
   margin-top: 500px;
   transform: translateX(-50%);
   max-width: 100vh;
+  font-size: 20px;
+  transition: font-size 0.3s ease;
+}
+
+.headline {
+  margin-left: -350px;
+  margin-top: 80px;
+  position: absolute;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  transition: font-size 0.3s ease;
+  color: whitesmoke;
+}
+
+.headline:hover {
+  font-size: 24px;
+  color: goldenrod;
 }
 
 .text {
   display: none;
 }
 
-.image {
-  max-width: 150px; /* Adjust the max-width as needed */
-  height: auto;
-  margin-right: 20px; /* Space between image and text */
-  border-radius: 8px; /* Optional: rounded corners for the image */
-}
-
 .africa {
-  max-width: 80%;
-  margin-left: 15%;
-  position:relative;
-  top:50px;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  gap: 2px; /* Space between the two containers */
   align-items: center;
+}
+
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 380px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.headings {
+  list-style-type: none;
+  padding: 0;
+}
+
+.headings li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.headings li:hover {
+  color: lightgray;
+  font-size: 24px;
+}
+
+.description {
+  padding-left: 20px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.description p {
+  display: none;
+}
+
+.description p.active {
+  display: block;
 }
