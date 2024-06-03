@@ -8,18 +8,19 @@
 }
 
 span {
-  font-family: "Times New Roman", Times, serif;
+ font-family:cursive;
 }
 
 button:hover {
   transition: 0.3s;
   color: white;
-  background-color: black;
+  background-color: darkgray;
 }
 
 button {
   border-style: none;
-  font-family: "Times New Roman", Times, serif;
+  font-family:cursive;
+  font-weight: 400;
 }
 
 mat-toolbar {

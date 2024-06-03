@@ -34,10 +34,12 @@ p {
 
 
 .button-container{
-  margin-top: -210px;
+  margin-top: -310px;
 }
 
 button{
-  font-family: "Times New Roman", Times, serif;
+ font-family:cursive;
   margin: 5px;
+  width: 30vh;
+  height: 5vw;
 }

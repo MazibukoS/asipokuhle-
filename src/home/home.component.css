@@ -17,90 +17,37 @@ p {
 }
 
 .about {
-  display: flex;
   align-items: center;
   background-color: #ffffff; /* White background for the container */
   border: 1px solid #ddd;
-  padding: 20px;
-  width: 100%;
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
+  font-family:cursive;
+  display: flex;
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.heading,
-.text {
-  position: absolute;
-  cursor: pointer;
-  font-family: "Times New Roman", Times, serif;
+  justify-content: center;
 }
 
 .heading:hover {
   font-size: 24px;
 }
 
-.about1,
-.aboutText {
-  margin-left: 1000px;
-  margin-top: 170px;
-  transform: translateX(-50%);
-  font-size: 20px;
-  transition: font-size 0.3s ease;
-}
-
-.vision,
-.visionText {
-  margin-left: 1000px;
-  margin-top: 400px;
-  transform: translateX(-50%);
-  max-width: 25vh;
-  font-size: 20px;
-  transition: font-size 0.3s ease;
-}
-
-.mission,
-.missionText {
-  margin-left: 1100px;
-  margin-top: 50px;
-  transform: translateX(-50%);
-  font-size: 20px;
-  transition: font-size 0.3s ease;
-  color: #ffffff;
-  
-}
-
-.values,
-.valuesText {
-  margin-left: -200px;
-  margin-top: 500px;
-  transform: translateX(-50%);
-  max-width: 100vh;
-  font-size: 20px;
-  transition: font-size 0.3s ease;
-}
-
 .headline {
-  margin-left: -350px;
-  margin-top: 80px;
+  margin-left: -100px;
+  margin-top: 50px;
   position: absolute;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
+  font-family:cursive;
+  font-weight: 600;
+  font-size: 30px;
   transition: font-size 0.3s ease;
-  color: whitesmoke;
-}
-
-.headline:hover {
-  font-size: 24px;
-  color: goldenrod;
-}
-
-.text {
-  display: none;
+  color: rgb(19, 18, 18);
 }
 
 .africa {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 25vh;
   object-fit: cover;
 }
 
@@ -110,44 +57,11 @@ p {
   align-items: center;
 }
 
+  .word {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+  }
 
-.container {
-  display: flex;
-  align-items: flex-start;
-  position: absolute;
-  margin-top: 250px;
-  margin-left: 380px;
-  font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.headings {
-  list-style-type: none;
-  padding: 0;
-}
-
-.headings li {
-  margin-bottom: 10px;
-  cursor: pointer;
-  color: #ffffff;
-  transition: color 0.3s ease;
-}
-
-.headings li:hover {
-  color: lightgray;
-  font-size: 24px;
-}
-
-.description {
-  padding-left: 20px;
-  color: #ffffff;
-  font-size: 18px;
-}
-
-.description p {
-  display: none;
-}
-
-.description p.active {
-  display: block;
-}

@@ -1,93 +1,78 @@
 .ventures {
   align-items: center;
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  margin-left: 10px;
+  font-family: cursive;
+  padding-left: 150px;
   margin-right: 10px;
   margin-top: -20px;
 }
 
 .infrastructure {
-  background-color: rgb(224, 214, 214);
   height: 250px;
+  width: 80vw;
   display: flex;
   align-items: center;
   padding: 20px;
-  border: 1px solid #ccc;
   border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .investment {
-  background-color: rgb(241, 239, 239);
   height: 250px;
   margin-top: -20px;
+  width: 80vw;
   display: flex;
   align-items: center;
   padding: 20px;
-  border: 1px solid #ccc;
   border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .mining {
-  background-color: rgb(224, 214, 214);
   height: 250px;
   margin-top: -20px;
   display: flex;
   align-items: center;
   padding: 20px;
-  border: 1px solid #ccc;
   border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80vw;
 }
 
 .energy {
-  background-color: rgb(241, 239, 239);
   height: 250px;
   margin-top: -20px;
   display: flex;
   align-items: center;
   padding: 20px;
-  border: 1px solid #ccc;
   border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80vw;
 }
 
 .project {
-  background-color: rgb(224, 214, 214);
   height: 250px;
   margin-top: -20px;
   display: flex;
   align-items: center;
   padding: 20px;
-  border: 1px solid #ccc;
   border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80vw;
 }
 
 .supply {
-  background-color: rgb(241, 239, 239);
   height: 250px;
   margin-top: -20px;
   display: flex;
   align-items: center;
   padding: 20px;
-  border: 1px solid #ccc;
   border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80vw;
 }
 
 .partners {
-  background-color: rgb(224, 214, 214);
   height: 250px;
-  margin-top: -20px;
   display: flex;
   align-items: center;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80vw;
+  margin-left: 25vw;
 }
 
 .image {
@@ -99,9 +84,30 @@
   max-width: 200px;
   border-radius: 8px;
   max-height: 200px;
+  height: 15vh;
+  width: 10vw;
 }
 
-.text {
-  flex: 1 1 auto;
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 10px;
 }
 
+.heading:hover {
+  color: rgb(220, 155, 71);
+}
+
+.text-container {
+  max-width: 0;
+  overflow: hidden;
+  transition: max-width 0.5s ease-in-out;
+  padding-left: 30px;
+}
+
+.heading:hover + .text-container {
+  max-width: 100%;
+}
