@@ -1,14 +1,19 @@
 <div class="home">
   <div class="wrapper">
-    <div class="logo">
+    <!--     <div class="logo">
       <img src="assets\home2.jpg" alt="Description" class="africa" />
     </div>
-    <h2 class="headline">Asipokuhle Holdings</h2>
+    <h2 class="headline">Asipokuhle Holdings</h2> -->
     <div class="about">
-      <img src="assets\GoldWorldMap.jpg" alt="World Map" class="goldWorldMap" />
+      <img
+        style="width: 60vh; height: 40vh"
+        src="assets\GoldWorldMap.jpg"
+        alt="World Map"
+        class="goldWorldMap"
+      />
       <div>
         <h2 style="color: rgb(220, 155, 71)">Who we are</h2>
-        <p style="width: 60vh; color: darkgray">
+        <p style="width: 60vh; color: darkgray; padding-left: 15vh">
           Asipokuhle Holdings is an investment holding company with a focus on
           long-term investment opportunities. We specialize in forging
           partnerships with financial entities renowned for successful
@@ -18,14 +23,14 @@
     </div>
     <div style="background-color: rgb(245, 244, 244)" class="about">
       <img
-        style="width: 60vh"
+        style="width: 60vh; height: 40vh"
         src="assets\vision.jpg"
         alt="World Map"
         class="goldWorldMap"
       />
       <div>
         <h2 style="color: rgb(220, 155, 71)">Mission</h2>
-        <p style="width: 60vh; color: darkgray">
+        <p style="width: 60vh; color: darkgray; padding-left: 15vh">
           Our mission is to build long-term relationships and be the preferred
           trading partner of choice to our clients.
         </p>
@@ -33,14 +38,14 @@
     </div>
     <div class="about">
       <img
-        style="width: 60vh"
+        style="width: 60vh; height: 40vh"
         src="assets\mission.jpg"
         alt="World Map"
         class="goldWorldMap"
       />
       <div>
         <h2 style="color: rgb(220, 155, 71)">Vision</h2>
-        <p style="width: 60vh; color: darkgray">
+        <p style="width: 60vh; color: darkgray; padding-left: 15vh">
           We’re always on the look-out for world classproducts and suppliers to
           complement our range, which in turn, gives our customers access to
           these products.
@@ -48,24 +53,44 @@
       </div>
     </div>
     <div style="background-color: rgb(245, 244, 244)" class="about">
-      <img
-        style="width: 60vh; height: 40vh"
-        src="assets\time.jpg"
-        alt="World Map"
-        class="goldWorldMap"
-      />
       <div>
-        <h2 style="color: rgb(220, 155, 71);padding-left: 12vh;">Values</h2>
+        <h2 style="color: rgb(220, 155, 71); padding-left: 12vh">Values</h2>
         <div style="padding-left: 15vh">
-          <span class="word" style="background-color: darkgray">Innovation</span>
-          <span class="word" style="background-color: lightgray">Integrity</span>
+          <span class="word" style="background-color: darkgray"
+            >Innovation</span
+          >
+          <span class="word" style="background-color: lightgray"
+            >Integrity</span
+          >
           <span class="word" style="background-color: darkgray"
             >Sustainability</span
           >
-          <span class="word" style="background-color: lightgray">Flexibility</span>
+          <span class="word" style="background-color: lightgray"
+            >Flexibility</span
+          >
           <span class="word" style="background-color: darkgray"
             >Collaboration</span
           >
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <div style="align-items: center;">
+        <div style="padding-left: 15vh">
+          <div>
+          <span id="aboutus"
+            class="word"
+            style="background-color: darkgray;"
+            *ngFor="let block of blocks"
+            [class.selected]="selectedBlock === block.id"
+            (click)="onSelectBlock(block.id)"
+          >
+            {{ block.heading }}
+          </span>
+          </div>
+          <p *ngIf="selectedBlock !== null" style="max-width: 700px;align-items: center;">
+            {{ blocks[selectedBlock - 1].text }}
+          </p>
         </div>
       </div>
     </div>
