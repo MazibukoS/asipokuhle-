@@ -8,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 import { routes } from './app/app.routes';
 import { FormsModule } from '@angular/forms';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 bootstrapApplication(AppComponent, {
   providers: [
@@ -17,7 +18,8 @@ bootstrapApplication(AppComponent, {
       MatToolbarModule,
       MatButtonModule,
       CommonModule,
-      FormsModule
+      FormsModule,
+      CarouselModule.forRoot()
     ),
   ],
 }).catch((err) => console.error(err));

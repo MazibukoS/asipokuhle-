@@ -111,3 +111,46 @@
 .heading:hover + .text-container {
   max-width: 100%;
 }
+
+.image-collage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-gap: 10px; /* Gap between images */
+}
+.image-collage2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 columns */
+  grid-gap: 10px; /* Gap between images */
+  padding-bottom: 3%;
+}
+
+.image-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   max-height: 400px;
+   max-width: 400px;
+}
+
+.image-item2 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   max-height: 400px;
+   max-width: 400px;
+}
+
+.image-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-item:hover img {
+  transform: scale(1.1); /* Scale up image on hover */
+}
+
+

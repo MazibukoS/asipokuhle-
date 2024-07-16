@@ -14,7 +14,7 @@ span {
 button:hover {
   transition: 0.3s;
   color: white;
-  background-color: darkgray;
+  background-color: rgb(220, 155, 71);
 }
 
 button {
