@@ -1,16 +1,34 @@
 <div class="home">
   <div class="wrapper">
     <img
-        style="width: 60vh; height: 40vh"
-        src="assets\GoldWorldMap.jpg"
+      style="
+        width: 60vw;
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+        object-fit: contain;
+      "
+      src="assets\GoldWorldMap.jpg"
+      alt="World Map"
+      class="goldWorldMap"
+    />
+    <div class="col-md-6" style="display: flex">
+      <img
+        style="
+          width: 30vw;
+          height: 40vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          object-fit: cover;
+        "
+        src="assets\who.jpg"
         alt="World Map"
         class="goldWorldMap"
       />
-    <div class="col-md-6" style="display: flex;">
-     
       <div>
         <h2 style="color: rgb(220, 155, 71)">Who we are</h2>
-        <p style="width: 60vh; color: darkgray;">
+        <p style="width: 60vh; color: darkgray">
           Asipokuhle Holdings is an investment holding company with a focus on
           long-term investment opportunities. We specialize in forging
           partnerships with financial entities renowned for successful
@@ -18,41 +36,71 @@
         </p>
       </div>
     </div>
-    <div style="background-color: rgb(245, 244, 244);display: flex;" class="col-md-6">
+    <div
+      style="background-color: rgb(245, 244, 244); display: flex"
+      class="col-md-6"
+    >
       <img
-        style="width: 60vh; height: 40vh"
+        style="
+          width: 30vw;
+          height: 40vh;
+          justify-content: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          object-fit: cover;
+        "
         src="assets\vision.jpg"
         alt="World Map"
         class="goldWorldMap"
       />
       <div>
         <h2 style="color: rgb(220, 155, 71)">Mission</h2>
-        <p style="width: 60vh; color: darkgray;">
+        <p style="width: 60vh; color: darkgray">
           Our mission is to build long-term relationships and be the preferred
           trading partner of choice to our clients.
         </p>
       </div>
     </div>
-    <div class="col-md-6" style="display: flex;">
+    <div class="col-md-6" style="display: flex">
       <img
-        style="width: 60vh; height: 40vh"
+        style="
+          width: 30vw;
+          height: 40vh;
+          justify-content: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          object-fit: cover;
+        "
         src="assets\mission.jpg"
         alt="World Map"
         class="goldWorldMap"
       />
       <div>
         <h2 style="color: rgb(220, 155, 71)">Vision</h2>
-        <p style="width: 60vh; color: darkgray;">
+        <p style="width: 60vh; color: darkgray">
           We’re always on the look-out for world classproducts and suppliers to
           complement our range, which in turn, gives our customers access to
           these products.
         </p>
       </div>
     </div>
-    <div style="background-color: rgb(245, 244, 244);height: 40vh;width: 120vh;" class="col-md-6">
-      <div>
-        <h2 style="color: rgb(220, 155, 71); padding-left: 30vh">Values</h2>
-        <div style="align-items: center;justify-content: center;padding-left: 45vh;object-fit: cover;box-sizing: border-box;">
+    <div
+      style="background-color: rgb(245, 244, 244); height: 40vh; width: 60vw"
+      class="col-md-6"
+    >
+      <div style="justify-content: center; align-items: center">
+        <h2 style="color: rgb(220, 155, 71)">Values</h2>
+        <div
+          style="
+            align-items: center;
+            justify-content: center;
+            object-fit: cover;
+            box-sizing: border-box;
+            display: flex;
+          "
+        >
           <span class="word" style="background-color: darkgray"
             >Innovation</span
           >
@@ -72,9 +120,9 @@
       </div>
     </div>
     <div class="about">
-      <div style="align-items: center">
-        <h2 style="color: rgb(220, 155, 71); padding-left: 12vh">What we do</h2>
-        <div style="padding-left: 15vh;padding-bottom: 5vh;margin-bottom: 10px">
+      <div style="justify-content: center; align-items: center">
+        <h2 style="color: rgb(220, 155, 71)">What we do</h2>
+        <div>
           <div>
             <span
               id="aboutus"
@@ -87,12 +135,6 @@
               {{ block.heading }}
             </span>
           </div>
-          <p
-            *ngIf="selectedBlock !== null"
-            style="max-width: 700px; align-items: center"
-          >
-            {{ blocks[selectedBlock - 1].text }}
-          </p>
         </div>
       </div>
     </div>

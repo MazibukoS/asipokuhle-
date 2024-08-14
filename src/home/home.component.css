@@ -1,7 +1,7 @@
 .home {
   margin: 0;
   align-items: center;
-  height: 100%;
+  height: 95%;
 }
 
 ul {
@@ -20,13 +20,12 @@ p {
   align-items: center;
   background-color: #ffffff; /* White background for the container */
   border-bottom: 1px solid #ddd;
-  height: 50vh;
-  object-fit: cover;
+  height: 40vh;
+  object-fit: contain;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: flex;
   box-sizing: border-box;
   justify-content: center;
-  padding-top: 5px;
 }
 
 .heading:hover {
@@ -44,6 +43,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .word {
