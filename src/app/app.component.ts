@@ -6,6 +6,10 @@ import { HomeComponent } from '../home/home.component';
 import { AboutComponent } from '../about/about.component';
 import { ContactComponent } from '../contact/contact.component';
 import { VenturesComponent } from '../ventures/ventures.component';
+import { GroupFunctionsComponent } from '../group-functions/group-functions.component';
+import { CommodityComponent } from '../commodity/commodity.component';
+import { OilComponent } from '../oil/oil.component';
+import { SafetyComponent } from '../safety/safety.component';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -19,6 +23,10 @@ import { RouterModule } from '@angular/router';
     AboutComponent,
     ContactComponent,
     VenturesComponent,
+    GroupFunctionsComponent,
+    CommodityComponent,
+    OilComponent,
+    SafetyComponent,
     RouterModule,
   ],
   templateUrl: './app.component.html',

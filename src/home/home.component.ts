@@ -2,15 +2,18 @@ import { Component } from '@angular/core';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatListModule, MatIconModule, CommonModule],
+  imports: [MatListModule, MatIconModule, CommonModule, RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
+  constructor(private router: Router) {}
   values = [
     'innovation',
     'integrity',
@@ -28,23 +31,6 @@ export class HomeComponent {
     }
   }
 
-  headings: string[] = ['Who we are', 'Mission', 'Vision', 'Values'];
-  descriptions: string[] = [
-    `Asipokuhle Holdings is an investment holding company with a focus on
-        long-term investment opportunities. We specialize in forging
-        partnerships with financial entities renowned for successful investments
-        across various industries.`,
-    ` To build long-term relationships and be the preferred trading partner of
-        choice to our clients.`,
-    ` We’re always on the look-out for world classproducts and suppliers to
-        complement our range, which in turn, gives our customers access to these
-        products.`,
-    `Innovation, 
-     Integrity,
-     Sustainability,
-     Flexibility,
-     Collaboration`,
-  ];
   activeIndex: number | null = null;
 
   setActive(index: number | null) {
@@ -93,10 +79,14 @@ export class HomeComponent {
   ];
 
   onSelectBlock(id: number) {
-    if (this.selectedBlock === id) {
-      this.selectedBlock = null;
-    } else {
-      this.selectedBlock = id;
+    if (id === 1) {
+      this.router.navigate(['/gfunctions']);
+    } else if (id === 2) {
+      this.router.navigate(['/commodity']);
+    } else if (id === 3) {
+      this.router.navigate(['/safety']);
+    } else if (id === 4) {
+      this.router.navigate(['/oil']);
     }
   }
 }
