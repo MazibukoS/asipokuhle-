@@ -1,141 +1,74 @@
-<div class="home">
-  <div class="wrapper">
-    <img
-      style="
-        width: 60vw;
-        height: 40vh;
-        justify-content: center;
-        align-items: center;
-        object-fit: contain;
-      "
-      src="assets\GoldWorldMap.jpg"
-      alt="World Map"
-      class="goldWorldMap"
-    />
-    <div class="col-md-6" style="display: flex">
-      <img
-        style="
-          width: 30vw;
-          height: 40vh;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          object-fit: cover;
-        "
-        src="assets\who.jpg"
-        alt="World Map"
-        class="goldWorldMap"
-      />
-      <div>
-        <h2 style="color: rgb(220, 155, 71)">Who we are</h2>
-        <p style="width: 60vh; color: darkgray">
-          Asipokuhle Holdings is an investment holding company with a focus on
-          long-term investment opportunities. We specialize in forging
-          partnerships with financial entities renowned for successful
-          investments across various industries.
-        </p>
-      </div>
+<div class="container wrapper">
+  <!-- Main Image Section -->
+<!--   <div class="container section">
+    <img src="assets/GoldWorldMap.jpg" alt="World Map" class="main-image" />
+  </div> -->
+
+  <!-- Who We Are Section -->
+  <div class="container section">
+    <img src="assets/who.jpg" alt="Who we are" class="content-image" />
+    <div class="text-content">
+      <h2 class="about-title">Who we are</h2>
+      <p>
+        Asipokuhle Holdings is an investment holding company with a focus on
+        long-term investment opportunities. We specialize in forging
+        partnerships with financial entities renowned for successful investments
+        across various industries.
+      </p>
     </div>
-    <div
-      style="background-color: rgb(245, 244, 244); display: flex"
-      class="col-md-6"
-    >
-      <img
-        style="
-          width: 30vw;
-          height: 40vh;
-          justify-content: center;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          object-fit: cover;
-        "
-        src="assets\vision.jpg"
-        alt="World Map"
-        class="goldWorldMap"
-      />
-      <div>
-        <h2 style="color: rgb(220, 155, 71)">Mission</h2>
-        <p style="width: 60vh; color: darkgray">
-          Our mission is to build long-term relationships and be the preferred
-          trading partner of choice to our clients.
-        </p>
-      </div>
+  </div>
+
+  <!-- Mission Section -->
+  <div class="container section bg-gray">
+    <img src="assets/vision.jpg" alt="Mission" class="content-image" />
+    <div class="text-content">
+      <h2 class="about-title">Mission</h2>
+      <p>
+        Our mission is to build long-term relationships and be the preferred
+        trading partner of choice to our clients.
+      </p>
     </div>
-    <div class="col-md-6" style="display: flex">
-      <img
-        style="
-          width: 30vw;
-          height: 40vh;
-          justify-content: center;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          object-fit: cover;
-        "
-        src="assets\mission.jpg"
-        alt="World Map"
-        class="goldWorldMap"
-      />
-      <div>
-        <h2 style="color: rgb(220, 155, 71)">Vision</h2>
-        <p style="width: 60vh; color: darkgray">
-          We’re always on the look-out for world classproducts and suppliers to
-          complement our range, which in turn, gives our customers access to
-          these products.
-        </p>
-      </div>
+  </div>
+
+  <!-- Vision Section -->
+  <div class="container section">
+    <img src="assets/mission.jpg" alt="Vision" class="content-image" />
+    <div class="text-content">
+      <h2 class="about-title">Vision</h2>
+      <p>
+        We’re always on the lookout for world-class products and suppliers to
+        complement our range, which in turn, gives our customers access to these
+        products.
+      </p>
     </div>
-    <div
-      style="background-color: rgb(245, 244, 244); height: 40vh; width: 60vw"
-      class="col-md-6"
-    >
-      <div style="justify-content: center; align-items: center">
-        <h2 style="color: rgb(220, 155, 71)">Values</h2>
-        <div
-          style="
-            align-items: center;
-            justify-content: center;
-            object-fit: cover;
-            box-sizing: border-box;
-            display: flex;
-          "
+  </div>
+
+  <!-- Values Section -->
+  <div class="container values-container bg-gray">
+    <h2 class="values-title">Values</h2>
+    <div class="values-list">
+      <span class="word darkgray">Innovation</span>
+      <span class="word lightgray">Integrity</span>
+      <span class="word darkgray">Sustainability</span>
+      <span class="word lightgray">Flexibility</span>
+      <span class="word darkgray">Collaboration</span>
+    </div>
+  </div>
+
+  <!-- What We Do Section -->
+  <div class="container about">
+    <div class="about-content">
+      <h2 class="about-title">What we do</h2>
+      <div class="about-blocks">
+        <span
+          id="aboutus"
+          class="word"
+          *ngFor="let block of blocks"
+          [class.selected]="selectedBlock === block.id"
+          (click)="onSelectBlock(block.id)"
         >
-          <span class="word" style="background-color: darkgray"
-            >Innovation</span
-          >
-          <span class="word" style="background-color: lightgray"
-            >Integrity</span
-          >
-          <span class="word" style="background-color: darkgray"
-            >Sustainability</span
-          >
-          <span class="word" style="background-color: lightgray"
-            >Flexibility</span
-          >
-          <span class="word" style="background-color: darkgray"
-            >Collaboration</span
-          >
-        </div>
-      </div>
-    </div>
-    <div class="about">
-      <div style="justify-content: center; align-items: center">
-        <h2 style="color: rgb(220, 155, 71)">What we do</h2>
-        <div>
-          <div>
-            <span
-              id="aboutus"
-              class="word"
-              style="background-color: darkgray"
-              *ngFor="let block of blocks"
-              [class.selected]="selectedBlock === block.id"
-              (click)="onSelectBlock(block.id)"
-            >
-              {{ block.heading }}
-            </span>
-          </div>
-        </div>
+          {{ block.heading }}
+        </span>
       </div>
     </div>
   </div>

@@ -1,32 +1,133 @@
-.spacer {
-  flex-basis: 40%;
-}
-
-.custom-button {
-  background-color: #ff4081;
-  color: white;
-}
-
-span {
- font-family:cursive;
-}
-
-button:hover {
-  transition: 0.3s;
-  color: white;
-  background-color: rgb(220, 155, 71);
-}
-
-button {
-  border-style: none;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 400;
-}
-
+/* Toolbar Styles */
 mat-toolbar {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
+}
+
+/* Default button styles */
+button {
+  border-style: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+
+/* Hover effects */
+button:hover {
+  transition: 0.3s;
+  color: white;
+  background-color: rgb(220, 155, 71); /* Custom orange color on hover */
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 600px) {
+  .spacer {
+    display: none; /* Hide spacer on small screens */
+  }
+
+  .menu-button {
+    display: block; /* Ensure menu button is visible on small screens */
+  }
+
+  button[mat-button] {
+    display: none; /* Hide the main toolbar buttons on small screens */
+  }
+
+  mat-menu {
+    margin-top: 0; /* Adjust menu position */
+  }
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 601px) {
+  .spacer {
+    flex-basis: 40%;
+  }
+
+  button {
+    font-size: 16px; /* Default font size for larger screens */
+  }
+
+  .menu-button {
+    display: none; /* Hide the menu button on larger screens */
+  }
+
+  button[mat-button] {
+    display: inline-flex; /* Show main toolbar buttons on larger screens */
+  }
+}
+
+/* Span styles */
+span {
+  font-family: cursive;
+}
+/* Toolbar Styles */
+mat-toolbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Default button styles */
+button {
+  border-style: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+/* Hover effects */
+button:hover {
+  transition: 0.3s;
+  color: white;
+  background-color: rgb(220, 155, 71); /* Custom orange color on hover */
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 600px) {
+  .spacer {
+    display: none; /* Hide spacer on small screens */
+  }
+
+  .menu-button {
+    display: block; /* Ensure menu button is visible on small screens */
+  }
+
+  button[mat-button] {
+    display: none; /* Hide the main toolbar buttons on small screens */
+  }
+
+  mat-menu {
+    margin-top: 0; /* Adjust menu position */
+  }
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 601px) {
+  .spacer {
+    flex-basis: 40%;
+  }
+
+  button {
+    font-size: 16px; /* Default font size for larger screens */
+  }
+
+  .menu-button {
+    display: none; /* Hide the menu button on larger screens */
+  }
+
+  button[mat-button] {
+    display: inline-flex; /* Show main toolbar buttons on larger screens */
+  }
+}
+
+/* Span styles */
+span {
+  font-family: cursive;
 }

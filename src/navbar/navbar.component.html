@@ -1,11 +1,18 @@
-<mat-toolbar color="white">
-  <span><img style="width: 250px;"
-        src="../assets/clearLogo.png"
-        alt="Image 1"
-      /></span>
+<mat-toolbar color="grey">
+  <span><img style="width: 250px;" src="../assets/clearLogo.png" alt="Image 1" /></span>
   <span class="spacer"></span>
+  
+  <!-- Menu button for small screens -->
+  <button mat-button [matMenuTriggerFor]="menu" class="menu-button">Menu</button>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/">Home</button>
+    <button mat-menu-item routerLink="/ventures">Ventures</button>
+    <button mat-menu-item routerLink="/contact">Contact</button>
+  </mat-menu>
+  
+  <!-- Normal buttons for larger screens -->
   <button mat-button routerLink="/">Home</button>
-  <!-- <button mat-button routerLink="/about">About Us</button> -->
   <button mat-button routerLink="/ventures">Ventures</button>
   <button mat-button routerLink="/contact">Contact</button>
 </mat-toolbar>

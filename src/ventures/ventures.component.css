@@ -1,147 +1,4 @@
-.ventures {
-  align-items: center;
-  text-align: center;
-  font-family: cursive;
-  padding-left: 150px;
-  margin-right: 10px;
-  margin-top: -20px;
-}
-
-.infrastructure {
-  height: 250px;
-  width: 80vw;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.investment {
-  height: 250px;
-  margin-top: -20px;
-  width: 80vw;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  border-radius: 4px;
-}
-
-.mining {
-  height: 250px;
-  margin-top: -20px;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  border-radius: 4px;
-  width: 80vw;
-}
-
-.energy {
-  height: 250px;
-  margin-top: -20px;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  border-radius: 4px;
-  width: 80vw;
-}
-
-.project {
-  height: 250px;
-  margin-top: -20px;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  border-radius: 4px;
-  width: 80vw;
-}
-
-.supply {
-  height: 250px;
-  margin-top: -20px;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  border-radius: 4px;
-  width: 80vw;
-}
-
-.partners {
-  height: 250px;
-  display: flex;
-  align-items: center;
-  width: 80vw;
-  margin-left: 25vw;
-}
-
-.image {
-  flex: 0 0 auto;
-  margin-right: 20px;
-}
-
-.image img {
-  max-width: 200px;
-  border-radius: 8px;
-  max-height: 200px;
-  height: 15vh;
-  width: 10vw;
-}
-
-.heading {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  margin-bottom: 10px;
-}
-
-.heading:hover {
-  color: rgb(220, 155, 71);
-}
-
-.text-container {
-  max-width: 0;
-  overflow: hidden;
-  transition: max-width 0.5s ease-in-out;
-  padding-left: 30px;
-}
-
-.heading:hover + .text-container {
-  max-width: 100%;
-}
-
-.image-collage {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  grid-gap: 10px; /* Gap between images */
-}
-.image-collage2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 3 columns */
-  grid-gap: 10px; /* Gap between images */
-  padding-bottom: 3%;
-}
-
-.image-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   max-height: 400px;
-   max-width: 400px;
-}
-
-.image-item2 {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   max-height: 400px;
-   max-width: 400px;
-}
-
+/* Base styles for images and text containers */
 .image-item img {
   display: block;
   width: 100%;
@@ -153,4 +10,64 @@
   transform: scale(1.1); /* Scale up image on hover */
 }
 
+/* Image Collages */
+.image-collage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+  grid-gap: 10px; /* Gap between images */
+}
 
+.image-collage2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for larger screens */
+  grid-gap: 10px; /* Gap between images */
+  padding-bottom: 3%;
+}
+
+/* Styling for individual image items */
+.image-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 400px;
+  max-width: 400px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .image-collage {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+
+  .image-collage2 {
+    grid-template-columns: 1fr; /* 1 column for medium screens */
+  }
+
+  .text-container {
+    padding-left: 15px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Additional adjustments for very small screens */
+@media (max-width: 576px) {
+  .image-collage {
+    grid-template-columns: 1fr; /* 1 column for small screens */
+  }
+
+  .image-collage2 {
+    grid-template-columns: 1fr; /* 1 column for small screens */
+  }
+
+  .section p {
+    font-size: 0.9rem; /* Adjust font size for better readability on small screens */
+  }
+
+  .container {
+    margin-top: 15px; /* Reduce margin on smaller screens */
+  }
+
+  .row {
+    margin-bottom: 20px; /* Add space between rows on small screens */
+  }
+}
