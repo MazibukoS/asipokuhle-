@@ -55,26 +55,26 @@ export class HomeComponent {
     working on various projects related to the sale of natural gas and biomass.
     Our operations currently concentrate predominantly on the trading of steam
     coal, coking coal and met coke, with major investment made in the latter two`,
-      heading: 'Asiphokuhle Commodity',
+      heading: 'Asipokuhle Commodity',
     },
     {
       id: 3,
-      text: `Asiphokuhle Safety Gear (Pty) Ltd was established in 2019 to provide a range
+      text: `Asipokuhle Safety Gear (Pty) Ltd was established in 2019 to provide a range
     of services from apparel, design and a combination of safety equipment for
     all scenarios. Coupled with in-house branding solutions, their extensive
     gifting, clothing and headwear ranges, backed up by deep inventory levels,
     provide clients with the comfort of knowing that they are able to focus on
     what they do best`,
-      heading: 'Asiphokuhle Safety Gear',
+      heading: 'Asipokuhle Safety Gear',
     },
     {
       id: 4,
-      text: `Mzansi Oil & Gas is an independent reseller of bulk petroleum and lubricant
+      text: `Asipokuhle Energies is an independent reseller of bulk petroleum and lubricant
     products, specializing in quality onsite fuel storage facilities, forecourt
     equipment and fuel management solutions. As a company, we are passionate
     about innovative services, processes and technologies that enable our
     clients to achieve optimal fuel efficiency.`,
-      heading: 'Mzansi Oil & Gas',
+      heading: 'Asipokuhle Energies',
     },
   ];
 
