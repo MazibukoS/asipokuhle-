@@ -4,79 +4,25 @@ h4 {
   color: black;
 }
 
-h3 {
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  color: rgb(111, 111, 111);
+@media (max-width: 600px) {
+  .logoStyle {
+    margin-top: -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
 }
 
-.contactForm {
-  text-align: center;
-  align-items: center;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.form-container {
-  width: 70%; /* Set width to 70% of the screen */
-  max-width: 400px; /* Set maximum width for larger screens */
-  margin: 0 auto; /* Center the form horizontally */
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-label {
-  font-weight: bold;
-  margin-bottom: 5px; 
-}
-
-input[type="text"],
-input[type="email"] {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  height: 70px;
-  text-align: center;
-}
-
-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: lightgray;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  align-items: center;
-  text-align: center;
-}
-
-button:hover {
-  background-color: goldenrod;
-}
-
-.background-image {
-    background-image:  url('../assets/contactUs2.jpg');
-    background-size: cover; /* Adjust to fit your needs */
-    background-position: center center; /* Adjust to fit your needs */
-    height: 150vh; /* Adjust to fit your needs */
-    margin-top: -20px;
+@media (min-width: 601px) {
+  .logoStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 50vw;
+    margin-top: -150px;
+    margin-left: 350px;
+  }
 }
