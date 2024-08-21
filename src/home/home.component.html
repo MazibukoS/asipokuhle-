@@ -1,9 +1,4 @@
 <div class="container wrapper">
-  <!-- Main Image Section -->
-<!--   <div class="container section">
-    <img src="assets/GoldWorldMap.jpg" alt="World Map" class="main-image" />
-  </div> -->
-
   <!-- Who We Are Section -->
   <div class="container section">
     <img src="assets/who.jpg" alt="Who we are" class="content-image" />
@@ -62,7 +57,7 @@
       <div class="about-blocks">
         <span
           id="aboutus"
-          class="word"
+          class="word word1"
           *ngFor="let block of blocks"
           [class.selected]="selectedBlock === block.id"
           (click)="onSelectBlock(block.id)"

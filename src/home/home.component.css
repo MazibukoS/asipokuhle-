@@ -82,6 +82,10 @@
   background-color: gray; /* Change background on hover */
 }
 
+.word1:hover {
+  background-color: rgb(220, 155, 71) !important;
+}
+
 .about {
   padding: 20px;
   height: 20vh;

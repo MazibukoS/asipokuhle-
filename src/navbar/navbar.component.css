@@ -31,6 +31,10 @@ button:hover {
     display: block !important; /* Ensure menu button is visible on small screens */
   }
 
+  .menu-button:hover{
+    background-color: rgb(220, 155, 71) !important;
+  }
+
   button[mat-button] {
     display: none; /* Hide the main toolbar buttons on small screens */
   }
